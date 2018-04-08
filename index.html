@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ken Garber</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="app.css" rel="stylesheet">
+</head>
+<body class="text-center">
+  <!-- CONTAINER -->
+  <div class="container-fluid">
+
+    <!-- LOADING -->
+    <div id="loading-div">
+      <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+          <br />
+          <h1 id="loading-text">loading</h1>
+          <h1 id="done-loading-text">
+            <u id="enter-btn"> <h1> enter -> </h1> </u>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-screen">
+      <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+          <br />
+          <h1>Ken Garber</h1>
+          <hr />
+          <div id="main-links">
+            <div class="row">
+              <div class="col-6 offset-3">
+                <img src="imgs/ken_grass_small.jpeg" class="img-fluid" style="border-radius: 100%">
+              </div>
+            </div>
+            <p><i>
+              "Success usually comes to those who are too busy to be looking for it."
+              <br />
+              - Henry David Thoreau
+            </i></p>
+            <u>
+              <h2 id="about-link" onclick='goToPage("about")'>
+                About -> 
+              </h2>
+            </u>
+            <br />
+            <u>
+              <h2 id="resume-link" onclick='goToPage("resume")'>
+                Resume &amp; Projects -> 
+              </h2>
+            </u>
+            <br />
+            <u>
+              <h2 id="contact-link" onclick='goToPage("contact")'>
+                Contact -> 
+              </h2>
+            </u>
+          </div>
+
+          <div id="about-page">
+            <u>
+              <span class="back-button" onclick='backButtonClick("about")'> 
+                <- Back 
+              </span>
+            </u>
+            <br />
+            <h2>About</h2>
+            <p>
+              Hi, welcome to my personal website!
+            </p>
+            <p>
+              My name is Ken - I'm a Computer Science student at Boston University - class of 2019. My interests in software include Distributed Systems, Data Science, and Machine Learning.
+            </p>
+            Lately I've been learning Google's Go language, working on a "Decentralized Social Network", organizing MakeBU (a BU makerspace), and learning a bit about Neural Networks. In fact, this website is written in Go - check out the "contact" and "trinkets" pages to see why.
+            <p>
+              When I'm not doing homework, organizing hackathons, or working on personal projects, I enjoy skiing, hiking, working out, and watching movies.
+            </p>
+            <p>
+              Learn more about all of my projects, check out my resume, or connect with me on the "contact" page here. I'm not currently searching for internships, but I am looking at opportunities for after graduation.
+            </p>
+          </div>
+          <div id="resume-page">
+            <u>
+              <span class="back-button" onclick='backButtonClick("resume")'> 
+                <- Back 
+              </span>
+            </u>
+            <br />
+            <h2>Resume &amp; Projects</h2>
+
+            <br />
+            <h2>My Resume</h2>
+            <ul class="list-group">
+              <li class="list-group-item">
+                Microsoft Word version: 
+                <a href="assets/ChenGarberResumeSep2017.docx">Download Link</a>
+                <br />
+                PDF version: 
+                <a href="assets/ChenGarberResumeSep2017.pdf">Download Link</a>
+              </li>
+              <li class="list-group-item">
+                GitHub: 
+                <a href="https://github.com/KenG98/">https://github.com/KenG98/</a>
+              </li>
+            </ul>
+
+            <br />
+            <h2>My Projects</h2>
+            <!-- FynchBio -->
+            <div class="card">
+              <img class="card-img-top" src="imgs/evolver.png">
+              <div class="card-block">
+                <h4 class="card-title">FynchBio</h4>
+                <p class="card-text">
+                  FynchBio is a piece of laboratory equipment, web app, and streaming API I contributed to. Our team of four set out to make the collection of biological data autonomous, managable, and reproducible. I was responsible for the Node.js web app, which included a stream of data readings as well as graphing capabilities and features for sharing data with other users. <a href="fynchbio.com">fynchbio.com</a>
+                </p>
+              </div>
+            </div>
+
+            <!-- BostonHacks -->
+            <br />
+            <div class="card">
+              <img class="card-img-top" src="imgs/bhacks.jpg">
+              <div class="card-block">
+                <h4 class="card-title">BostonHacks</h4>
+                <p class="card-text">
+                  In my free time I am an organizer of BostonHacks, one of Boston's largest collegiate hackathons. Annually we take on 400+ hackers for a 36 hour event at our campus, which takes a year of planning. Aside from logistics, I contributed to our event website, which is written in Node.js and includes a log in and account management portal, through which we get thousands of applications, and communicate with hundreds of hackers. <a href="bostonhacks.io">bostonhacks.io</a> 
+                </p>
+              </div>
+            </div>
+
+            <!-- Nielsen (Big Data) -->
+            <br />
+            <div class="card">
+              <img class="card-img-top" src="imgs/bigdata.jpg">
+              <div class="card-block">
+                <h4 class="card-title">Nielsen (Big Data)</h4>
+                <p>
+                  In the Summer of 2017 at Boston University's SAIL (Software Application and Innovation Lab) my main project was helping an economics professor optimize his research workflow by speeding up his data queries (7 terrabytes of consumer data), and documenting the process for future SAIL projects.
+                </p>
+                <p class="card-text">
+                  I learned how to deploy a Hadoop / Spark cluster, upload all of my data to an HDFS cluster, then convert the data to the Parquet format, which is optimal for batch processing. I translated complex multiple join and reduce queries from the Stata language to Scala, and sped up 2 hour queries to under 10 minutes.
+                </p>
+              </div>
+            </div>
+
+            <!-- Distributed Social Network -->
+            <br />
+            <div class="card">
+              <img class="card-img-top" src="imgs/decentralized.png">
+              <div class="card-block">
+                <h4 class="card-title">Decentralized Social Network</h4>
+                <p class="card-text">
+                  This is a work in progress which aims to bring the decentralized structure to IRC chats. Me and a team of five others are currently working on it at our Thursday evening "Weekly Hack Nights" at my school club MakeBU.
+                </p>
+                <p class="card-text">
+                  Because this is a hobby project and not a business, we decided to implement everything from scratch, including our database, agreement protocol, and servers. We're using Go, and hopefully by May 2018 we'll have something really interesting to show off. <a href="https://github.com/KenG98/distributed-social-network">https://github.com/KenG98/distributed-social-network</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="contact-page">
+            <u>
+              <span class="back-button" onclick='backButtonClick("contact")'> 
+                <- Back 
+              </span>
+            </u>
+            <br />
+            <h2>Contact</h2>
+            <p>
+              You can reach me in a number of ways. The best way is by Email, but I respond to anything within a day or two anyways.
+            </p>
+            <button class="btn btn-primary" id="emailbutton" onclick="showemail()">
+              Click to Show Email
+            </button>
+            <p id="emailspace"></p>
+            <p> LinkedIn: <a href="https://www.linkedin.com/in/kengar/">https://www.linkedin.com/in/kengar/</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- load javascript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <!-- <script src="bounce.min.js"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <script src="app.js"></script>
+</body>
+</html>
