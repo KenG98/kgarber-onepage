@@ -2,6 +2,10 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+#content-div {
+  animation-duration: 0.5s;
+}
+
 /*#main-links {
   animation-duration: 0.5s;
 }
