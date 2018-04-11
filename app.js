@@ -1,3 +1,5 @@
+// firefox needs this to not cache the page when going back
+window.onunload = function(){};
 
 $.fn.extend({
   animateCss: function(animationName, callback, props) {
