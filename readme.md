@@ -1,6 +1,8 @@
 # kgarber.com
 
-One page personal website. Built in Jekyll, hosted on Github Pages.
+Built in Jekyll, hosted on Github Pages.
+
+Jekyll theme [Minima](https://github.com/jekyll/minima).
 
 ## Dev Env
 
@@ -29,4 +31,4 @@ Ctrl-c to quit the development server.
 
 Ctrl-d to quit bash. The docker container will be deleted.
 
-Hosted by github pages, so push to master to publish changes.
+Hosted by github pages. Push to master to publish changes.
