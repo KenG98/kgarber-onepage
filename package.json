@@ -1,0 +1,14 @@
+{
+  "name": "kgarber-onepage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "sakura.css": "^1.5.1"
+  }
+}

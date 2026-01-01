@@ -1,0 +1,9 @@
+/* Darker links */
+a {
+  color: #1465bc;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #0d2f50;
+}
